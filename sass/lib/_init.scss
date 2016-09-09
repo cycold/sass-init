@@ -1,0 +1,56 @@
+/**
+* Created by cycold on 2016-07-13
+*/
+// 统一字体
+// http://www.admin10000.com/document/2971.html
+// http://www.ruanyifeng.com/blog/2014/07/chinese_fonts.html
+// Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", sans-serif;
+// 华文细黑(Mac)，微软雅黑(Win)是这两个平台的默认中文字体
+// 具体字体设置可以参考：https://mail.qq.com
+html body { font-family: "Hiragino Sans GB", "冬青黑体", "STXihei", "华文细黑", "Microsoft YaHei","\5fae\8f6f\96c5\9ed1", "SimSun", "宋体", "Arial", "sans-serif"; }
+
+// 设置盒子模型
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+body {
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  -webkit-touch-callout: none;
+  -ms-content-zooming: none;
+  -webkit-text-size-adjust: 100%;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  overflow-y: auto;
+  cursor: default;
+}
+
+html, body, div, span, object, iframe, img, table, caption, thead, tbody,
+tfoot, tr, tr, td, article, aside, canvas, details, figure, hgroup, menu,
+nav, footer, header, section, summary, mark, audio, video {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cit, code,
+del, dfn, em, ins, q, samp, small, strong, sub, sup, b, i, hr, dl, dt, dd,
+ol, ul, li, fieldset, legend, label {
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-style: normal;
+}
+
+a, a:hover{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+a img { border: 0; }
+li, ol{ list-style: none; }
+i { font-style: normal; }
+:focus { outline: 0; }

@@ -1,0 +1,22 @@
+/**
+* Created by cycold on 2016-08-15
+*/
+
+.page-header {
+  padding-bottom: inherit;
+  margin: 0;
+  border-bottom: none;
+}
+
+.btn-mobile {
+  font-size: 12px;
+  padding: 5px 10px;
+  line-height: 1.347;
+}
+.btn.btn-static-clear {
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+
+.btn.no-radius { border-radius: 0; }

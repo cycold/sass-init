@@ -1,0 +1,13 @@
+/**
+* Created by cycold on 2016-08-05
+*/
+
+.loading-animation {
+  display: inline-block;
+  animation: anim-rotate 1.75s infinite linear;
+}
+
+@keyframes anim-rotate{
+  0% { transform:rotate(0) }
+  100%{ transform:rotate(360deg) }
+}

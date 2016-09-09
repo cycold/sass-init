@@ -1,0 +1,50 @@
+/**
+* Created by cycold on 2016-05-18
+*/
+
+html, body, #app, .page-view{
+  min-height: 100vh;
+}
+
+/**
+ * 页面整体布局 基于flex
+ * 参考:
+ *    http://www.w3cplus.com/css3/normalizing-cross-browser-flexbox-bugs.html
+ *    https://philipwalton.com/articles/normalizing-cross-browser-flexbox-bugs/
+ */
+
+/**
+* 1. Avoid the IE 10-11 `min-height` bug.
+* 2. Set `flex-shrink` to `0` to prevent Chrome, Opera, and Safari from
+*    letting these items shrink to smaller than their content's default
+*    minimum size.
+*/
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* 1 */
+}
+.page-header,
+.page-footer {
+  flex-shrink: 0; /* 2 */
+}
+.page-content {
+  flex: 1 0 auto; /* 2 */
+  position: relative;
+  // display: flex;
+  // flex-direction: column;
+  // > div { flex: 1; }
+}
+
+.row-container {
+  width: 80%;
+  max-width: 1124px;
+  margin: 0 auto;
+  position: relative;
+}
+
+// 页面顶层组件
+.components-view {
+  position: absolute;
+}

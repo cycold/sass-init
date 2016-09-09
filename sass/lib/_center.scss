@@ -1,0 +1,27 @@
+/*
+ * absloute layout center for fixed width or height
+ * --------------------------------------------------
+*/
+.abs-vc, .abs-vhc{ margin: auto 0; position: absolute; top: 0; bottom: 0; z-index: 180; }
+.abs-hc, .abs-vhc{ margin: 0 auto; position: absolute; left: 0; right: 0; z-index: 180; }
+.abs-vhc{ margin: auto; }
+.abs-offset-right{ margin: auto 0; position: absolute; top: 0; bottom: 0; z-index: 180; left: auto; right: 0; text-align: right; }
+.abs-offset-left{ margin: auto 0; position: absolute; top: 0; bottom: 0; z-index: 180; right: auto; left: 0; text-align: left; }
+.abs-stretch{ position: absolute; top:0; bottom: 0; left: 0; right: 0; }
+
+/*
+ * transform center
+ * --------------------------------------------------
+*/
+.transform-vhc{margin: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+.transform-vc-right{margin: auto; position: absolute; top: 50%; right: 0; transform: translateY(-50%); }
+.transform-vc-left{margin: auto; position: absolute; top: 50%; left: 0; transform: translateY(-50%); }
+
+/*
+ * inline-block center
+ * --------------------------------------------------
+*/
+/*.inline-vc,.inline-vhc{ font-size: 0;}*/
+.inline-vhc{ text-align: center; }
+.inline-vc > *,.inline-vhc > *{ display: inline-block; vertical-align: middle; font-size: 14px;max-width: 99%;}
+.inline-vc::after,.inline-vhc::after{content: "";display: inline-block;vertical-align: middle;height: 100%;width: 0;}

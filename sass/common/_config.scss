@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+// 登录按钮
+@mixin btn-login {
+  background-color: #66CC01;
+  background-image: linear-gradient(to bottom,#80EC15 0,#66CC01 100%);
+  border-color: #80EC15;
+}

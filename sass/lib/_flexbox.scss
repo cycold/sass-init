@@ -1,0 +1,56 @@
+@charset "utf-8";
+/**
+ * Created by cycold on 5/11/16.
+ */
+.flex, .flex-vc, .flex-hc, .flex-vhc {
+  display: flex;
+}
+
+// 某些手机在flex容器的伸缩项目display:inline-block时会失效,出现某些奇怪的问题(uc space-between 时,需要display: block)
+.flex > *, .flex-vc > * , .flex-vh > *, .flex-vhc > * { display: block !important; }
+
+.flex > .flex,
+.flex > .flex-vc,
+.flex > .flex-hc,
+.flex > .flex-vhc,
+
+.flex-vc > .flex,
+.flex-vc > .flex-vc,
+.flex-vc > .flex-hc,
+.flex-vc > .flex-vhc,
+
+.flex-hc > .flex,
+.flex-hc > .flex-vc,
+.flex-hc > .flex-hc,
+.flex-hc > .flex-vhc,
+
+.flex-vhc > .flex,
+.flex-vhc > .flex-vc,
+.flex-vhc > .flex-hc,
+.flex-vhc > .flex-vhc {
+  display: flex;
+}
+
+.flex-vc, .flex-vhc { align-items: center; }
+.flex-hc, .flex-vhc { justify-content: center; }
+.flex-item { flex: 1; }
+.flex-none { flex: none; }
+
+.flex-h-end { justify-content: flex-end; }
+.flex-h-start { justify-content: flex-start; }
+.flex-h-space-between { justify-content: space-between; }
+.flex-h-space-around { justify-content: space-around; }
+
+.flex-v-start { align-items: flex-start; }
+.flex-v-end { align-items: flex-end; }
+.flex-v-stretch { align-items: stretch; }
+.flex-v-baseline { align-items: baseline; }
+
+.flex-column { flex-direction: column; }
+.flex-row { flex-direction: row; }
+
+.flex-row-reverse { flex-direction: row-reverse; }
+.flex-column-reverse { flex-direction: column-reverse; }
+.flex-wrap { flex-wrap: wrap; }
+.flex-nowrap { flex-wrap: nowrap; }
+.flex-order-reverse { order: -1; }

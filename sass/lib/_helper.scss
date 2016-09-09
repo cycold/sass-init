@@ -1,0 +1,38 @@
+/**
+* Created by cycold on 2016-05-13
+*/
+
+.clearfix:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+//多行
+.text-truncate2 {
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+//禁止换行
+.nowrap{ white-space: nowrap; }
+
+
